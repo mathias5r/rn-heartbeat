@@ -1,4 +1,4 @@
-package com.rnunstoppablecounter;
+package com.rnheartbeat;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.NativeModule;

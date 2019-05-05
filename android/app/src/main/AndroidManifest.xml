@@ -1,19 +1,19 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.rnunstoppablecounter">
+  package="com.rnheartbeat">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
-      android:name=".MainApplication"
+      android:name="com.rnheartbeat.MainApplication"
       android:label="@string/app_name"
       android:icon="@mipmap/ic_launcher"
       android:roundIcon="@mipmap/ic_launcher_round"
       android:allowBackup="false"
       android:theme="@style/AppTheme">
       <activity
-        android:name=".MainActivity"
+        android:name="com.rnheartbeat.MainActivity"
         android:label="@string/app_name"
         android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
         android:windowSoftInputMode="adjustResize">
@@ -24,15 +24,15 @@
       </activity>
       <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
         <service
-            android:name="com.rnunstoppablecounter.HeartbeartService"
+            android:name="com.rnheartbeat.HeartbeartService"
             android:enabled="true"
             android:exported="false" >
         </service>
         <service
-            android:name="com.rnunstoppablecounter.HeartbeatEventService">
+            android:name="com.rnheartbeat.HeartbeatEventService">
         </service>
         <receiver
-            android:name="com.rnunstoppablecounter.BootUpReceiver"
+            android:name="com.rnheartbeat.BootUpReceiver"
             android:enabled="true"
             android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
             <intent-filter>

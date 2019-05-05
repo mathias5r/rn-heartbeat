@@ -1,4 +1,4 @@
-package com.rnunstoppablecounter;
+package com.rnheartbeat;
 
 import android.content.Intent;
 import android.os.Bundle;
