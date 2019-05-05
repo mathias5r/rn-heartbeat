@@ -10,7 +10,7 @@ import javax.annotation.Nonnull;
 
 public class HeartbeatModule extends ReactContextBaseJavaModule {
 
-    public static final String REACT_CLASS = "IAmAlive";
+    public static final String REACT_CLASS = "Heartbeat";
     private static ReactApplicationContext reactContext;
 
     public HeartbeatModule(@Nonnull ReactApplicationContext reactContext) {

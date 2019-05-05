@@ -13,7 +13,7 @@ public class HeartbeatEventService extends HeadlessJsTaskService {
     protected HeadlessJsTaskConfig getTaskConfig(Intent intent) {
         Bundle extras = intent.getExtras();
         return new HeadlessJsTaskConfig(
-                "IAmAlive",
+                "Heartbeat",
                 extras != null ? Arguments.fromBundle(extras) : null,
                 5000,
                 true);

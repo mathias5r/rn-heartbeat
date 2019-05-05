@@ -20,5 +20,5 @@ const RNRedux = () => (
 );
 
 
-AppRegistry.registerHeadlessTask('IAmAlive', () => MyHeadlessTask);
+AppRegistry.registerHeadlessTask('Heartbeat', () => MyHeadlessTask);
 AppRegistry.registerComponent(appName, () => RNRedux);
