@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {
-  StyleSheet, Text, View, TouchableOpacity, Image,
+  StyleSheet, Text, View, TouchableOpacity, Image, DeviceEventEmitter,
 } from 'react-native';
 import { connect } from 'react-redux';
 import Heartbeat from './Heartbeat';
@@ -28,8 +28,21 @@ const styles = StyleSheet.create({
   },
 });
 
+// App.js
 
-const App = ({ heartBeat }) => {
+const App = () => {
+  const [heartBeat, setHeartBeat] = useState(false);
+
+  useEffect(() => {
+    DeviceEventEmitter.addListener('HeartBeat', () => {
+      console.log('Receiving heartbeat event!');
+      setHeartBeat(true);
+      setTimeout(() => {
+        setHeartBeat(false);
+      }, 1000);
+    });
+  });
+
   const imageSize = heartBeat ? 150 : 100;
   return (
     <View style={styles.container}>
