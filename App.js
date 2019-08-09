@@ -21,6 +21,7 @@ const styles = StyleSheet.create({
   button: {
     backgroundColor: 'gray',
     padding: 10,
+    margin: 10,
   },
   text: {
     fontSize: 20,
@@ -39,6 +40,9 @@ const App = ({ heartBeat }) => {
       <View style={styles.view}>
         <TouchableOpacity style={styles.button} onPress={() => Heartbeat.startService()}>
           <Text style={styles.instructions}>Start</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.button} onPress={() => Heartbeat.stopService()}>
+          <Text style={styles.instructions}>Stop</Text>
         </TouchableOpacity>
       </View>
     </View>

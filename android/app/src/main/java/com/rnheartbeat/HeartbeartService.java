@@ -43,6 +43,7 @@ public class HeartbeartService extends Service {
     @Override
     public void onDestroy() {
         super.onDestroy();
+        this.handler.removeCallbacks(this.runnableCode);
     }
 
     @Override
