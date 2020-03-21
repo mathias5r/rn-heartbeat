@@ -176,7 +176,7 @@ dependencies {
     implementation 'org.jetbrains:annotations:15.0'// From node_modules
 
     if (enableHermes) {
-      def hermesPath = "../../node_modules/react-native/node_modules/hermesvm/android/";
+      def hermesPath = "../../node_modules/hermesvm/android/";
       debugImplementation files(hermesPath + "hermes-debug.aar")
       releaseImplementation files(hermesPath + "hermes-release.aar")
     } else {
