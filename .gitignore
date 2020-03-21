@@ -10,3 +10,5 @@ android/app/app.iml
 
 # CocoaPods
 /ios/Pods/
+android/.gradle
+.gradle
