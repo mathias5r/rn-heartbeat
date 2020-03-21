@@ -10,6 +10,8 @@ android/app/app.iml
 
 # CocoaPods
 /ios/Pods/
-android/.gradle
-.gradle
-android/.gradle/*
+
+
+# Ignore gradle files
+.gradle/
+build/

@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "react": "16.8.6",
-    "react-native": "0.60.4",
+    "react-native": "0.60.5",
     "react-redux": "^7.0.3",
     "redux": "^4.0.1",
     "redux-actions": "^2.6.5"
@@ -25,7 +25,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.13.0",
     "jest": "^24.7.1",
-    "metro-react-native-babel-preset": "^0.55.0",
+    "metro-react-native-babel-preset": "^0.56.0",
     "react-test-renderer": "16.8.6"
   },
   "jest": {
