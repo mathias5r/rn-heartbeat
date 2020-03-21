@@ -12,3 +12,4 @@ android/app/app.iml
 /ios/Pods/
 android/.gradle
 .gradle
+android/.gradle/*
