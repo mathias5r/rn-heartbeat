@@ -3,13 +3,15 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint ."
   },
   "dependencies": {
-    "react": "16.8.6",
-    "react-native": "0.60.6",
+    "react": "16.9.0",
+    "react-native": "0.61.0",
     "react-redux": "^7.0.3",
     "redux": "^4.0.1",
     "redux-actions": "^2.6.5"
@@ -24,9 +26,10 @@
     "eslint-plugin-import": "^2.17.2",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.13.0",
+    "flow-bin": "^0.121.0",
     "jest": "^24.9.0",
     "metro-react-native-babel-preset": "^0.56.0",
-    "react-test-renderer": "16.8.6"
+    "react-test-renderer": "16.9.0"
   },
   "jest": {
     "preset": "react-native"
