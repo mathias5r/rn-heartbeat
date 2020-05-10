@@ -15,7 +15,7 @@ public class HeartbeatModule extends ReactContextBaseJavaModule {
 
     public HeartbeatModule(@Nonnull ReactApplicationContext reactContext) {
         super(reactContext);
-        this.reactContext = reactContext;
+        HeartbeatModule.reactContext = reactContext;
     }
 
     @Nonnull
@@ -26,11 +26,11 @@ public class HeartbeatModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public void startService() {
-        this.reactContext.startService(new Intent(this.reactContext, HeartbeartService.class));
+        HeartbeatModule.reactContext.startService(new Intent(HeartbeatModule.reactContext, HeartbeartService.class));
     }
 
     @ReactMethod
     public void stopService() {
-        this.reactContext.stopService(new Intent(this.reactContext, HeartbeartService.class));
+        HeartbeatModule.reactContext.stopService(new Intent(HeartbeatModule.reactContext, HeartbeartService.class));
     }
 }
